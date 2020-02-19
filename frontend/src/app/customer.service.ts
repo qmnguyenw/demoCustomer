@@ -7,19 +7,20 @@ import { Observable } from 'rxjs';
 })
 export class CustomerService {
 
+  // create base url
   private baseUrl = 'http://localhost:8000/customers';
 
   constructor(private http: HttpClient) { }
 
-  getCustomer(id: number): Observable<Object> {
+  getCustomer(id: number): Observable<object> {
     return this.http.get(`${this.baseUrl}/${id}`);
   }
 
-  createCustomer(customer: Object): Observable<Object> {
+  createCustomer(customer: object): Observable<object> {
     return this.http.post(`${this.baseUrl}/`, customer);
   }
 
-  updateCustomer(id: number, value: any): Observable<Object> {
+  updateCustomer(id: number, value: any): Observable<object> {
     return this.http.put(`${this.baseUrl}/${id}`, value);
   }
 

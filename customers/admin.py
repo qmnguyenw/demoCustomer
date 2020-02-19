@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Customer
 
-# Register your models here.
+# add Customer field into admin page
+admin.site.register(Customer)
