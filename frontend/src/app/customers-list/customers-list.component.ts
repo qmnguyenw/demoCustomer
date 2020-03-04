@@ -5,7 +5,7 @@ import { CustomerService } from '../customer.service';
 import { Customer } from '../customer';
 
 @Component({
-  selector: 'customers-list',
+  selector: 'app-customers-list',
   templateUrl: './customers-list.component.html',
   styleUrls: ['./customers-list.component.css']
 })

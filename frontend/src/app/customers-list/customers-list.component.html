@@ -1,7 +1,7 @@
 <h1>Customers</h1>
 
 <div *ngFor="let customer of customers | async" style="width: 300px;">
-  <customer-details [customer]='customer'></customer-details>
+  <app-customer-details [customer]='customer'></app-customer-details>
 </div>
 
 <div>

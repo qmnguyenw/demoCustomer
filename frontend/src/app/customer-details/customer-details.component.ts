@@ -9,7 +9,7 @@ declare var test: any;
 
 
 @Component({
-  selector: 'customer-details',
+  selector: 'app-customer-details',
   templateUrl: './customer-details.component.html',
   styleUrls: ['./customer-details.component.css']
 })
@@ -44,6 +44,7 @@ export class CustomerDetailsComponent implements OnInit {
   }
 
   f() {
+    // tslint:disable-next-line: no-unused-expression
     new test();
   }
 }
