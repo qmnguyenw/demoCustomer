@@ -3,7 +3,7 @@ import { Customer } from '../customer';
 import { CustomerService } from '../customer.service';
 
 @Component({
-  selector: 'search-customers',
+  selector: 'app-search-customers',
   templateUrl: './search-customers.component.html',
   styleUrls: ['./search-customers.component.css']
 })

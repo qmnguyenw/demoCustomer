@@ -5,8 +5,8 @@ from django.views.decorators.csrf import csrf_exempt
 from rest_framework.parsers import JSONParser
 from rest_framework import status
 
-from customers.models import Customer
-from customers.serializers import CustomerSerializer
+from backend.customers.models import Customer
+from backend.customers.serializers import CustomerSerializer
 
 @csrf_exempt
 def customer_list(request):
