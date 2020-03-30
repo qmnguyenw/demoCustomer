@@ -1,0 +1,35 @@
+<h1>Customers</h1>
+
+<div class="container mt-4">
+  <p>
+    Total rows: {{ getRowsValue(null) }} <br>
+    State Active (true): {{ getRowsValue(true) }} <br>
+    State Inactive (false): {{ getRowsValue(false) }}
+  </p>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">State</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let customer of customers|async; let i = index" [ngClass]="{'text-primary': customer.active}">
+        <td>{{ i + 1 }}</td>
+        <app-customer-details [customer]='customer'></app-customer-details>
+        <!-- <td>{{customer.name}}</td>
+        <td>{{customer.age}}</td>
+        <td>
+          <mat-slide-toggle #toggle [checked]="customer.active" (change)="customer.active = !customer.active" ></mat-slide-toggle>
+        </td> -->
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div>
+  <button type="button" class="btn btn-danger" (click)='deleteCustomers()'>Delete All</button>
+</div>
