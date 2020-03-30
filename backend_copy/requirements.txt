@@ -108,7 +108,7 @@ django-rest-swagger==2.2.0
 djangorestframework==3.11.0
 drf-yasg==1.17.1
 EasyProcess==0.2.10
-ecdsa==0.13
+ecdsa==0.13.3
 fake-useragent==0.1.11
 Flask==1.1.1
 Flask-Cors==3.0.8
