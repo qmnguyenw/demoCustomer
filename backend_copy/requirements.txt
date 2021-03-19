@@ -105,7 +105,7 @@ django-filter==2.2.0
 django-nested-admin==3.2.4
 django-rest-knox==4.1.0
 django-rest-swagger==2.2.0
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 drf-yasg==1.17.1
 EasyProcess==0.2.10
 ecdsa==0.13
