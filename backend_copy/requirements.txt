@@ -111,7 +111,7 @@ EasyProcess==0.2.10
 ecdsa==0.13
 fake-useragent==0.1.11
 Flask==1.1.1
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 flask-marshmallow==0.10.1
 future==0.18.2
 gast==0.2.2
